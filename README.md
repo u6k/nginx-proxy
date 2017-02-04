@@ -2,7 +2,7 @@
 
 自宅サーバー用のリバース・プロキシーです。
 
-TODO: CircleCIのバッヂ
+[![CircleCI](https://circleci.com/gh/u6k/nginx-proxy.svg?style=svg)](https://circleci.com/gh/u6k/nginx-proxy)
 
 ## Requirement
 
