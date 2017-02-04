@@ -42,7 +42,7 @@ $ docker run -d \
     --privileged \
     -v $HOME/docker/nginx-proxy:/etc/nginx/certs:rw \
     -v /var/run/docker.sock:/var/run/docker.sock:ro \
-    --volume-from nginx-proxy \
+    --volumes-from nginx-proxy \
     u6kapps/letsencrypt-nginx-proxy-companion
 ```
 
