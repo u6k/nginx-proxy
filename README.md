@@ -54,4 +54,4 @@ $ docker run -d \
 
 ## License
 
-* [MIT License](https://github.com/u6k/redmine/blob/master/LICENSE)
+* [MIT License](https://github.com/u6k/nginx-proxy/blob/master/LICENSE)
