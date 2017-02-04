@@ -1,0 +1,4 @@
+FROM jwilder/nginx-proxy
+MAINTAINER u6k.apps@gmail.com
+
+COPY nginx-proxy/my-proxy.conf /etc/nginx/conf.d/my-proxy.conf
