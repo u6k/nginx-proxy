@@ -32,7 +32,8 @@ $ docker run -d \
     --privileged \
     -p 80:80 \
     -p 443:443 \
-    -v $HOME/docker/nginx-proxy:/etc/nginx/certs:ro \
+    -v $HOME/docker/nginx-proxy/certs:/etc/nginx/certs:ro \
+    -v $HOME/docker/nginx-proxy/htpasswd:/etc/nginx/htpasswd \
     -v /etc/nginx/vhost.d \
     -v /usr/share/nginx/html \
     -v /var/run/docker.sock:/tmp/docker.sock:ro \
@@ -40,7 +41,7 @@ $ docker run -d \
 $ docker run -d \
     --name letsencrypt-nginx-proxy-companion \
     --privileged \
-    -v $HOME/docker/nginx-proxy:/etc/nginx/certs:rw \
+    -v $HOME/docker/nginx-proxy/certs:/etc/nginx/certs:rw \
     -v /var/run/docker.sock:/var/run/docker.sock:ro \
     --volumes-from nginx-proxy \
     u6kapps/letsencrypt-nginx-proxy-companion
