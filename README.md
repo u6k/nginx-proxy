@@ -7,7 +7,27 @@
 ## Requirement
 
 * Docker
-* `$HOME/docker/nginx-proxy/`フォルダ
+
+```
+Client:
+ Version:      17.03.1-ce
+ API version:  1.27
+ Go version:   go1.7.5
+ Git commit:   c6d412e
+ Built:        Tue Mar 28 00:40:02 2017
+ OS/Arch:      windows/amd64
+
+Server:
+ Version:      17.04.0-ce
+ API version:  1.28 (minimum version 1.12)
+ Go version:   go1.7.5
+ Git commit:   4845c56
+ Built:        Wed Apr  5 18:45:47 2017
+ OS/Arch:      linux/amd64
+ Experimental: false
+```
+
+* `${DOCKER_VOLUMES}/nginx-proxy`フォルダ
 
 ## Build
 
@@ -15,37 +35,7 @@
 
 ## Installation
 
-```
-# stop container
-$ docker kill nginx-proxy || true
-$ docker rm nginx-proxy || true
-$ docker kill letsencrypt-nginx-proxy-companion || true
-$ docker rm letsencrypt-nginx-proxy-companion || true
-
-# pull image
-$ docker pull u6kapps/nginx-proxy
-$ docker pull u6kapps/letsencrypt-nginx-proxy-companion
-
-# start container
-$ docker run -d \
-    --name nginx-proxy \
-    --privileged \
-    -p 80:80 \
-    -p 443:443 \
-    -v $HOME/docker/nginx-proxy/certs:/etc/nginx/certs:ro \
-    -v $HOME/docker/nginx-proxy/htpasswd:/etc/nginx/htpasswd \
-    -v /etc/nginx/vhost.d \
-    -v /usr/share/nginx/html \
-    -v /var/run/docker.sock:/tmp/docker.sock:ro \
-    u6kapps/nginx-proxy
-$ docker run -d \
-    --name letsencrypt-nginx-proxy-companion \
-    --privileged \
-    -v $HOME/docker/nginx-proxy/certs:/etc/nginx/certs:rw \
-    -v /var/run/docker.sock:/var/run/docker.sock:ro \
-    --volumes-from nginx-proxy \
-    u6kapps/letsencrypt-nginx-proxy-companion
-```
+`docker-compose.yml`を参照
 
 ## Author
 
