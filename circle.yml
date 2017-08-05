@@ -18,7 +18,3 @@ deployment:
             - docker login -e $DOCKER_EMAIL -u $DOCKER_USER -p $DOCKER_PASS
             # push nginx-proxy
             - docker push u6kapps/nginx-proxy
-            # push letsencrypt-nginx-proxy-companion
-            - docker pull jrcs/letsencrypt-nginx-proxy-companion
-            - docker tag jrcs/letsencrypt-nginx-proxy-companion u6kapps/letsencrypt-nginx-proxy-companion:latest
-            - docker push u6kapps/letsencrypt-nginx-proxy-companion
