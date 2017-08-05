@@ -1,8 +1,11 @@
 # nginx-proxy
 
-自宅サーバー用のリバース・プロキシーです。
+[![CircleCI](https://img.shields.io/circleci/project/github/u6k/nginx-proxy.svg)](https://circleci.com/gh/u6k/nginx-proxy)
+[![license](https://img.shields.io/github/license/u6k/nginx-proxy.svg)](https://github.com/u6k/nginx-proxy/blob/master/LICENSE)
+[![GitHub tag](https://img.shields.io/github/tag/u6k/nginx-proxy.svg)](https://github.com/u6k/nginx-proxy/releases)
+[![Docker Pulls](https://img.shields.io/docker/pulls/u6kapps/nginx-proxy.svg)](https://hub.docker.com/r/u6kapps/nginx-proxy/)
 
-[![CircleCI](https://circleci.com/gh/u6k/nginx-proxy.svg?style=svg)](https://circleci.com/gh/u6k/nginx-proxy)
+自宅サーバー用のリバース・プロキシーです。
 
 ## Requirement
 
