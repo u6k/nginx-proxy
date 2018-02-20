@@ -1,9 +1,6 @@
 # nginx-proxy
 
-[![CircleCI](https://img.shields.io/circleci/project/github/u6k/nginx-proxy.svg)](https://circleci.com/gh/u6k/nginx-proxy)
-[![license](https://img.shields.io/github/license/u6k/nginx-proxy.svg)](https://github.com/u6k/nginx-proxy/blob/master/LICENSE)
-[![GitHub tag](https://img.shields.io/github/tag/u6k/nginx-proxy.svg)](https://github.com/u6k/nginx-proxy/releases)
-[![Docker Pulls](https://img.shields.io/docker/pulls/u6kapps/nginx-proxy.svg)](https://hub.docker.com/r/u6kapps/nginx-proxy/)
+[![Travis](https://img.shields.io/travis/u6k/nginx-proxy.svg)](https://travis-ci.org/u6k/nginx-proxy) [![GitHub tag](https://img.shields.io/github/tag/u6k/nginx-proxy.svg)](https://github.com/u6k/nginx-proxy/releases) [![license](https://img.shields.io/github/license/u6k/nginx-proxy.svg)](https://github.com/u6k/nginx-proxy/blob/master/LICENSE) [![Docker Stars](https://img.shields.io/docker/stars/u6kapps/nginx-proxy.svg)](https://hub.docker.com/r/u6kapps/nginx-proxy/)
 
 自宅サーバー用のリバース・プロキシーです。
 
@@ -34,7 +31,7 @@ Server:
 
 ## Build
 
-`circle.yml`を参照。
+`.travis.yml`を参照。
 
 ## Installation
 
